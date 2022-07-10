@@ -4,6 +4,7 @@ import {
   Center,
   Checkbox,
   Container,
+  Flex,
   FormControl,
   FormLabel,
   Heading,
@@ -13,10 +14,10 @@ import {
 } from "@chakra-ui/react";
 import { Link as RouteLink } from "react-router-dom";
 
-export const Login = () => {
+export const Signup = () => {
   return (
     <Center>
-      <Container maxW={320}>
+      <Container maxW={340}>
         <Box
           width="full"
           height="100vh"
@@ -27,10 +28,31 @@ export const Login = () => {
         >
           <Text mb="1rem">
             <Heading size="md" p="0.5rem">
-              LOGIN
+              SIGNUP
             </Heading>
-            Please enter your credentials
+            Create an Account
           </Text>
+          <Flex gap="0.5rem">
+            <FormControl>
+              <FormLabel>First Name</FormLabel>
+              <Input
+                id="firstname"
+                type="text"
+                variant="flushed"
+                placeholder="Jane"
+              />
+            </FormControl>
+            <FormControl>
+              <FormLabel>Last Name</FormLabel>
+              <Input
+                id="lastname"
+                type="text"
+                variant="flushed"
+                placeholder="Fonda"
+              />
+            </FormControl>
+          </Flex>
+
           <FormControl>
             <FormLabel>Username</FormLabel>
             <Input
@@ -49,17 +71,23 @@ export const Login = () => {
               placeholder="********"
             />
           </FormControl>
-          <Checkbox spacing="1rem">Remember Me</Checkbox>
+          <FormControl>
+            <FormLabel>Confirm Password</FormLabel>
+            <Input
+              id="confirmPassword"
+              type="password"
+              variant="flushed"
+              placeholder="********"
+            />
+          </FormControl>
+          <Checkbox spacing="1rem">Accept Terms and Conditions</Checkbox>
           <Button colorScheme="teal" variant="solid" w="full">
-            LOGIN
-          </Button>
-          <Button colorScheme="teal" variant="solid" w="full">
-            LOGIN WITH GUEST CREDENTIALS
+            SIGNUP
           </Button>
           <Text>
-            Don't have an account?{" "}
-            <Link color="teal.500" as={RouteLink} to="/signup">
-              Signup
+            Already have an account?{" "}
+            <Link color="teal.500" as={RouteLink} to="/login">
+              Login
             </Link>
           </Text>
         </Box>

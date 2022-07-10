@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Login } from "./pages";
+import { Login, Signup } from "./pages";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       Welcome to Socioverse
       <Routes>
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </div>
   );
