@@ -98,8 +98,7 @@ export const Signup = () => {
           </FormControl>
           <Checkbox spacing="1rem">Accept Terms and Conditions</Checkbox>
           <Button
-            colorScheme="teal"
-            variant="solid"
+            variant="brand"
             w="full"
             fontSize="1.5rem"
             p="1.5rem"
@@ -108,7 +107,7 @@ export const Signup = () => {
           </Button>
           <Text>
             Already have an account?{" "}
-            <Link color="teal.500" as={RouteLink} to="/login">
+            <Link color="blue.500" as={RouteLink} to="/login">
               Login
             </Link>
           </Text>

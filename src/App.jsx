@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { ThemeButton } from "./components/ThemeButton/ThemeButton";
+import { SideNav, ThemeButton } from "./components";
 import { Login, Signup } from "./pages";
 
 function App() {
   return (
     <div className="App">
-      Welcome to Socioverse
       <ThemeButton />
+      <SideNav />
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />

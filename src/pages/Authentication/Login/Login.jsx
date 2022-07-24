@@ -57,27 +57,15 @@ export const Login = () => {
             />
           </FormControl>
           <Checkbox spacing="1rem">Remember Me</Checkbox>
-          <Button
-            colorScheme="teal"
-            variant="solid"
-            w="full"
-            fontSize="1.5rem"
-            p="1.5rem"
-          >
+          <Button variant="brand" w="full" fontSize="1.5rem" p="1.5rem">
             LOGIN
           </Button>
-          <Button
-            colorScheme="teal"
-            variant="solid"
-            w="full"
-            fontSize="1.5rem"
-            p="1.5rem"
-          >
+          <Button variant="brand" w="full" fontSize="1.5rem" p="1.5rem">
             LOGIN WITH GUEST CREDENTIALS
           </Button>
           <Text>
             Don't have an account?{" "}
-            <Link color="teal.500" as={RouteLink} to="/signup">
+            <Link color="blue.500" as={RouteLink} to="/signup">
               Signup
             </Link>
           </Text>
